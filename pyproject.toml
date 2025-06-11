@@ -1,0 +1,27 @@
+[project]
+name = "ebay-mac-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Steven Su", email = "lakewood999@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.12.12",
+    "aiolimiter>=1.2.1",
+    "numpy>=2.3.0",
+    "opencv-python>=4.11.0.86",
+    "ortools>=9.13.4784",
+    "paddleocr>=2.10.0",
+    "pycocotools>=2.0.10",
+    "python-dotenv>=1.1.0",
+    "segment-anything",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+segment-anything = { git = "https://github.com/facebookresearch/segment-anything.git" }

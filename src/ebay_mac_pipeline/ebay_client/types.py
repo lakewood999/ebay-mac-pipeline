@@ -1,0 +1,66 @@
+from enum import Enum
+
+class MarketplaceId(Enum):
+    EBAY_AT = "EBAY_AT"
+    EBAY_AU = "EBAY_AU"
+    EBAY_BE = "EBAY_BE"
+    EBAY_CA = "EBAY_CA"
+    EBAY_CH = "EBAY_CH"
+    EBAY_CN = "EBAY_CN"
+    EBAY_CZ = "EBAY_CZ"
+    EBAY_DE = "EBAY_DE"
+    EBAY_DK = "EBAY_DK"
+    EBAY_ES = "EBAY_ES"
+    EBAY_FI = "EBAY_FI"
+    EBAY_FR = "EBAY_FR"
+    EBAY_GB = "EBAY_GB"
+    EBAY_GR = "EBAY_GR"
+    EBAY_HK = "EBAY_HK"
+    EBAY_IE = "EBAY_IE"
+    EBAY_IL = "EBAY_IL"
+    EBAY_IN = "EBAY_IN"
+    EBAY_IT = "EBAY_IT"
+    EBAY_JP = "EBAY_JP"
+    EBAY_MY = "EBAY_MY"
+    EBAY_NL = "EBAY_NL"
+    EBAY_NO = "EBAY_NO"
+    EBAY_NZ = "EBAY_NZ"
+    EBAY_PE = "EBAY_PE"
+    EBAY_PH = "EBAY_PH"
+    EBAY_PL = "EBAY_PL"
+    EBAY_PR = "EBAY_PR"
+    EBAY_PT = "EBAY_PT"
+    EBAY_RU = "EBAY_RU"
+    EBAY_SE = "EBAY_SE"
+    EBAY_SG = "EBAY_SG"
+    EBAY_TH = "EBAY_TH"
+    EBAY_TW = "EBAY_TW"
+    EBAY_US = "EBAY_US"
+    EBAY_VN = "EBAY_VN"
+    EBAY_ZA = "EBAY_ZA"
+
+class FieldGroup(Enum):
+    ASPECT_REFINEMENTS = "ASPECT_REFINEMENTS"
+    BUYING_OPTION_REFINEMENTS = "BUYING_OPTION_REFINEMENTS"
+    CATEGORY_REFINEMENTS = "CATEGORY_REFINEMENTS"
+    CONDITION_REFINEMENTS = "CONDITION_REFINEMENTS"
+    EXTENDED = "EXTENDED"
+    MATCHING_ITEMS = "MATCHING_ITEMS"
+    FULL = "FULL"
+
+
+class SortField(Enum):
+    PRICE_ASCENDING = "price"
+    PRICE_DESCENDING = "-price"
+    DISTANCE_ASCENDING = "distance"
+    DATE_NEW = "newlyListed"
+    DATE_ENDING = "endingSoonest"
+
+
+# NOTE: Only partial support
+class FilterGroup(Enum):
+    BID_COUNT = "bidCount"
+    BUYING_OPTIONS = "buyingOptions"
+    CHARITY_ONLY = "charityOnly"
+    CONDITION_IDS = "conditionIds"
+    CONDITIONS = "conditions"
