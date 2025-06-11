@@ -16,6 +16,8 @@ reproduction at a larger scale can also be achieved. However, our full code is e
 to the potential size of the data and the resulting complexity and differences in users' infrastructure along
 with ethical concerns of abuse.
 
+For a proof of concept for geolocation BSSIDs using Apple's Wi-Fi positioning system (WPS), see this [repository](https://github.com/gigaryte/bssid-geolocator).
+
 
 ### Security/Privacy Issues and Ethical Concerns
 Running the code in this repository does not pose any foreseeable security or privacy risks to the user's machine.
